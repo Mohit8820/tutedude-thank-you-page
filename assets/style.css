@@ -118,7 +118,7 @@ h3 {
 header img {
   width: 15rem;
   height: auto;
-  margin-top: 5rem;
+  margin-top: 5vh;
 }
 
 h1 {
@@ -213,10 +213,16 @@ main button {
   main {
     width: auto;
   }
+  .add-flex {
+    flex-direction: column;
+  }
 }
 @media (max-width: 500px) {
   html {
     font-size: 62.5%;
+  }
+  header img {
+    margin-top: 3vh;
   }
   main {
     padding: 2rem 1.5rem;
@@ -230,9 +236,12 @@ main button {
     margin-top: -2.3rem;
   }
   .add-modal-content {
-    padding: 0 3.9rem 5.7rem;
+    padding: 0 3.9rem 3rem;
   }
-  .add-flex {
-    flex-direction: column;
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 55%;
   }
 }
